@@ -10,7 +10,7 @@
 export default {
   name: 'svg-icon',
   props: {
-    iconName: {
+    iconClass: {
       type: String,
       required: true
     },
@@ -22,8 +22,11 @@ export default {
     iconName() {
       return `#icon-${this.iconClass}`;
     },
+    /**
+     * SVG类名设置
+     */
     svgClass() {
-      return this.className ? ('svg-icon' + this.className) : 'svg-icon';
+      return this.className ? `svg-icon ${this.className}` : 'svg-icon';
     }
   }
 }

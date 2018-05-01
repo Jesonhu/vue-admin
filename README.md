@@ -34,6 +34,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     + 引入normalize.css模块
     + 引入elementUI框架并配置语言包
     + 引入svg图标
+      + Vue全局组件使用
+        ```javascript
+        Vue.component('svg-icon', SvgIcon)
+        ```
     + 引入Vuex模块
     + 引入permission.js权限控制
       + NProgress进度条模块使用和配置(element-ui模块里面引入这个模块)
@@ -43,6 +47,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
         + 设置Cookie
         + 读取Cookie
         + 删除Cookie
+  + [A] Easy Mock 远程模拟数据
+    + 当前请求的easy mock api应该是这个模板作者创建的
+    + 请求的地址为: process.env.BASE_API
+    + [BASE_API]是自己添加的
 
   + [N] scss 样式类bem方式使用
   + [N] 类bem方式明明
