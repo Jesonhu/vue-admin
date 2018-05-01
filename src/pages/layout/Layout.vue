@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper">
     <!-- 左侧导航 -->
-    <div class="slidebar">左侧</div>
+    <sidebar class="sidebar-container"></sidebar>
     <!-- End -->
 
     <!-- 右侧内容 -->
@@ -12,13 +12,22 @@
 </template> 
 
 <script>
+import Sidebar from '@/components/Sidebar';
+
 export default {
-  name: 'layout'
+  name: 'layout',
+  mounted() {
+  },
+  components: {
+    Sidebar
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "src/styles/mixin.scss";
  .app-wrapper {
+   @include clearfix;
    position: relative;
    height: 100%;
    width: 100%;

@@ -12,6 +12,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 import locale from 'element-ui/lib/locale/lang/zh-CN';
 Vue.use(ElementUI, { locale });
 
+import '@/styles/index.scss'; // global css
+
 import '@/icons';
 import '@/router/permission'; // permission control
 

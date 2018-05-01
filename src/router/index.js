@@ -19,10 +19,12 @@ export default new Router({
       name: 'Dashboard',
       component: Layout,
       hidden: true,
-      children: [{
-        path: 'dashboard',
-        component: () => import('@/pages/dashboard/index')
-      }]
+      children: [
+        {
+          path: 'dashboard',
+          component: () => import('@/pages/dashboard/index')
+        }
+      ]
     }
   ]
 })
